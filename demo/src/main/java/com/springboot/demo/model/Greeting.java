@@ -3,6 +3,7 @@ package com.springboot.demo.model;
 import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -12,6 +13,7 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@JsonPropertyOrder({"greeting","name"})
 public class Greeting implements Serializable {
 
 	/**

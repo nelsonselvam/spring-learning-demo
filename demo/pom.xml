@@ -5,22 +5,22 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId> <!-- PARENT PROJECT -->
+		<artifactId>spring-boot-starter-parent</artifactId> <!-- PARENT PROJECT : Tells Maven which version of deps to downlod -->
 		<version>2.5.0-M3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	
+
 	<groupId>com.springboot</groupId>	<!-- CHILD PROJECT -->
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring Demo</name>
 	<description>Demo project for Spring Boot to explore a basic spring boot application.</description>
-	
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	
-	<dependencies>	<!-- REQUIRED DEPENDENCIES -->
+
+	<dependencies>	<!-- REQUIRED DEPENDENCIES: Tells Maven what deps to download -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -70,4 +70,7 @@
 	</pluginRepositories>
 
 	<inceptionYear>2021</inceptionYear>
+	<scm>
+		<url>github.com/demo-app</url>
+	</scm>
 </project>
